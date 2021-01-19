@@ -26,7 +26,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          echo ${{ steps.terraform_version.outputs.content }}
+          cd /
           python -m pip install --upgrade pip
           pip install flake8 pytest
       - name: Lint with flake8
