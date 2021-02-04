@@ -12,8 +12,12 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-env:
-  something: ghcr.io/glb-ces-publiccloud/aws-container-terraform:latest
+defaults:
+  run:
+    shell: bash
+    working-directory: scripts
+  env:
+    something: ghcr.io/glb-ces-publiccloud/aws-container-terraform:latest
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
