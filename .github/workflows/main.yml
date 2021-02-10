@@ -15,3 +15,15 @@ jobs:
 
       - name: Run a one-line script
         run: echo Hello from Octo Organization
+  build2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run a harmless script
+        run: echo I also passed
+  build3:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run a harmless script
+        run: echo I am destined for failure
