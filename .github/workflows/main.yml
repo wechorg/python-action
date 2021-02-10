@@ -26,4 +26,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run a harmless script
-        run: echo I am destined for failure
+        run: exit 1
